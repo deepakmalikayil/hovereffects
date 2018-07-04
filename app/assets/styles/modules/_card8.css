@@ -1,0 +1,131 @@
+.card8{
+    cursor: pointer;
+    width: 500px;
+    height:auto;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    
+}
+
+
+
+.card8::before, .card8::after{
+    content: '';
+    position: absolute;   
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+
+    transition: all 0.5s ease-out;
+}
+
+.card8::before {
+    background-color: rgba(52, 94, 231, 0.8);
+}
+
+
+.card8:hover::before, .card8:hover::after{
+    opacity: 1;
+}
+
+
+
+
+  
+.card-img8{
+    
+    max-width: 100%;
+    display: block;
+    transform-origin: 0 50%;
+    transition: all 0.3s ease-out;
+
+   
+}
+
+
+
+
+
+
+.card-head8 {
+    position: absolute;
+    width: 450px;
+   
+    top:30px;
+    left:80px;
+    transform: translateX(-15%);
+    transition: all 0.5s ease-out;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color:#fff;
+    margin-bottom: 0;
+    border:2px solid #fff;
+    max-width: 200px;
+
+}
+
+
+.card-head8 h3{
+   
+  
+    margin: 0;
+    margin-top: 1rem;
+    font-size: 30px;
+    font-weight: 100;
+    /* transition: transform 0.3s ease-out; */
+  
+  
+}
+
+.card-head8 h3 strong{
+    display: block;
+    font-weight: 700;
+}
+
+.card8:hover .card-img8{
+    opacity:0.6;
+    
+   
+
+}
+
+.card-text8{
+    position: absolute;
+    top:60%;
+    left: 60%;
+    text-align: right;
+    border: 2px solid #fff;
+    padding:1rem 1.2rem 1rem 1.2rem;
+    transform: translate(-70%,-80%);
+    opacity: 0;
+    transition: all 0.2s ease-out;
+}
+
+.card-text8 p{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.6rem;
+    color:#fff;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.card8:hover .card-text8 {
+    opacity: 1;
+    transform: translate(-32.5%,-36%);
+    
+}
+
+
+
+
+
+
+

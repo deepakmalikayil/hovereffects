@@ -1,6 +1,6 @@
 body{
 	font-family: 'Roboto', sans-serif;
-	color: #333;
+	
 }
 
 img{
@@ -14,6 +14,3 @@ img{
 	browser takes care of it */
 }
 
-a {
-	color:$mainOrange;
-}
