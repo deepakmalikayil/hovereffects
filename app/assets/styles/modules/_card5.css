@@ -1,0 +1,124 @@
+.card5{
+    cursor: pointer;
+    width: 500px;
+    height:auto;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+
+.card5::before, .card5::after{
+    content: '';
+    position: absolute;   
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.card5::before {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.card5:hover::before, .card5:hover::after{
+    opacity: 1;
+}
+
+.card5:hover::after{
+    transform: scale(1);
+}
+
+
+
+  
+.card-img5{
+    transform: scale(1.2);
+    max-width: 100%;
+    display: block;
+    transform-origin: 0 50%;
+    transition: all 0.3s ease-out;
+
+   
+}
+
+.card-text5 {
+    position: absolute;
+    max-width: 180px;
+    top:-10px;
+    right:30px;
+    text-transform: uppercase;
+    color:#fff;
+    transition: all 0.5s ease-out;
+    padding: 2rem 0.5rem;
+    text-align: justify;
+    
+    
+    
+}
+
+.card-text5 p{
+    border-left: 1px solid #fff;
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    word-spacing: 2px;
+    opacity:0;
+    transition: all 0.35s ease-out;
+}
+
+.card-head5 {
+    position: absolute;
+    width: 450px;
+    min-height: 130px;
+    top:50%;
+    left:50%;
+    transition: all 0.5s ease-out;
+    padding: 2rem 2rem 0 2rem;
+    text-align: center;
+    transform: translate(-75%,30%);
+    text-transform: uppercase;
+    color:#fff;
+
+}
+
+
+.card-head5 h3{
+   
+  
+ 
+    font-size: 30px;
+    font-weight: 100;
+    /* transition: transform 0.3s ease-out; */
+  
+  
+}
+
+.card-head5 h3 strong{
+    font-weight: 700;
+}
+
+.card5:hover .card-img5{
+    opacity:0.6;
+    transform:  scale(1);
+   
+
+}
+
+
+
+.card5:hover .card-text5 p{
+    opacity:1;
+   
+  
+   
+}
+
+.card5:hover .card-text5 {
+
+}
+

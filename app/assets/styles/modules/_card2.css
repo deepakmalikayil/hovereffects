@@ -1,0 +1,109 @@
+.card2{
+    cursor: pointer;
+    width: 500px;
+    height:auto;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    
+}
+
+.card2::before, .card2::after{
+    content: '';
+    position: absolute;   
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.2s ease-out;
+    
+    
+}
+
+.card2::before {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.card2:hover::before, .card2:hover::after{
+    opacity: 1;
+}
+
+
+
+  
+.card-img2{
+    max-width: 100%;
+    display: block;
+    transition: opacity 0.2s ease-out;
+
+   
+}
+
+.card-text2 {
+    position: absolute;
+    width: 450px;
+    min-height: 130px;
+    top:30%;
+    left:50%;
+    transform: translate(-50%,-65%);
+    text-transform: uppercase;
+    color:#fff;
+    text-align: center;
+    border:6px solid #fff;
+    transition: all 0.5s ease-out;
+    padding: 2rem 2rem 0 2rem;
+    text-align: justify;
+    
+    
+}
+
+.card-text2 p{
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+    /* transform: translateY(220%); */
+    word-spacing: 4px;
+    opacity:0;
+    transition: all 0.35s ease-out;
+}
+
+.card-head2{
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform: translate(-50%,-65%);
+    text-transform: uppercase;
+    color:#fff;
+    
+}
+
+.card-head2 h3{
+  
+    margin-left: -200px;
+    font-size: 23px;
+    font-weight: 200;
+    /* transition: transform 0.3s ease-out; */
+  
+  
+}
+
+.card-head2 h3 strong{
+    font-weight: 700;
+}
+
+.card2:hover .card-img2{
+    opacity:0.6;
+}
+
+/* .card2:hover .card-text2 h3{
+    transform: translateY(70%);
+} */
+
+.card2:hover .card-text2 p{
+    opacity:1;
+   
+}
+
+.card2:hover .card-text2 {
+   transform: translate(-50%,50%);
+}

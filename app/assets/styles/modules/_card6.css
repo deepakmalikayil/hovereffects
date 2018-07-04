@@ -1,0 +1,159 @@
+.card6{
+    cursor: pointer;
+    width: 500px;
+    height:auto;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+
+.card6::before, .card6::after{
+    content: '';
+    position: absolute;   
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.card6::before {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+.card6:hover::before, .card6:hover::after{
+    opacity: 1;
+}
+
+.card6:hover::after{
+    transform: scale(1);
+}
+
+
+
+  
+.card-img6{
+    
+    max-width: 100%;
+    display: block;
+    transform-origin: 0 50%;
+    transition: all 0.3s ease-out;
+
+   
+}
+
+.card-text6 {
+    position: absolute;
+    max-width: 180px;
+    bottom:-15px;
+    right:30px;
+    text-transform: uppercase;
+    color:#fff;
+    transition: all 0.5s ease-out;
+    padding: 2rem 0.5rem;
+    text-align: justify;
+    z-index: 2;
+    
+    
+    
+}
+
+.card-text6::before{
+    content: '';
+    display: block;
+  
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    opacity: 0;
+    transform: scaleX(6.3) scaleY(1.65) translateY(41%) ;
+    background: rgba(255,255,255,0.4);
+    z-index: -1;
+    transition: all 0.3s ease-out;
+}
+
+.card6:hover .card-text6::before{
+    transform: scaleX(6.3) scaleY(1.65) translateY(41%) rotate(-40deg);
+    opacity: 1;
+}
+
+.card6:hover .icon{
+    color: rgb(78, 48, 87);
+}
+
+.card6:hover .card-text6:hover i:hover {
+    color:#fff;
+}
+
+.card-text6 p{
+   
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    word-spacing: 2px;
+    opacity:0;
+    transition: all 0.35s ease-out;
+}
+
+.card-head6 {
+    position: absolute;
+    width: 450px;
+    min-height: 130px;
+    top:0;
+    left:0;
+    transform: translateX(-10%);
+    transition: all 0.5s ease-out;
+    padding: 2rem 2rem 0 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color:#fff;
+
+}
+
+
+.card-head6 h3{
+   
+  
+ 
+    font-size: 30px;
+    font-weight: 100;
+    /* transition: transform 0.3s ease-out; */
+  
+  
+}
+
+.card-head6 h3 strong{
+    font-weight: 700;
+}
+
+.card6:hover .card-img6{
+    opacity:0.6;
+    
+   
+
+}
+
+.card-text6 span{
+    padding: 0.2rem;
+}
+
+
+
+.card6:hover .card-text6 p{
+    opacity:1;
+   
+  
+   
+}
+
+.card6:hover .card-text6 {
+
+}
+
