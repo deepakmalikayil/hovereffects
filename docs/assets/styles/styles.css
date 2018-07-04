@@ -1,0 +1,1405 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	color: #333;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+*{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box; /*so if our width +margin +border=padding
+	 goes beyong 100% 
+	browser takes care of it */
+}
+
+a {
+	color:#d59541;
+}
+
+*, *::before , *::after{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #333;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* .container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container::before , .container::after{
+    clear:both;
+    display:table;
+    content:'';
+}
+
+.container > div{
+    float: left;
+} */
+
+.card{
+    cursor: pointer;
+    width: 500px;
+    height:auto;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    background: -webkit-gradient(linear , left top, left bottom , from(rgba(0,0,0,0.5)) , to(rgba(68, 54, 54, 0.5)));
+    background: linear-gradient(to bottom , rgba(0,0,0,0.5) , rgba(68, 54, 54, 0.5));
+}
+
+.card::before, .card::after{
+    content: '';
+    position: absolute;
+    top:1.2rem;
+    left: 1.2rem;
+    right: 1.2rem;
+    bottom: 1.2rem;
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    transition: -webkit-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+    
+}
+
+.card::before{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0,1);
+            transform: scale(0,1);
+}
+
+.card::after {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    -webkit-transform: scale(1,0);
+            transform: scale(1,0);
+  }
+
+.card:hover::before {
+    -webkit-transform: scale(1.05, 1);
+            transform: scale(1.05, 1);
+  }
+
+.card:hover::after {
+    -webkit-transform: scale(1, 1.05);
+            transform: scale(1, 1.05);
+  }
+
+.card-img{
+    max-width: 100%;
+    display: block;
+    -webkit-transition: opacity 0.2s ease-out;
+    transition: opacity 0.2s ease-out;
+
+   
+}
+
+.card-text {
+    width: 350px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-65%);
+            transform: translate(-50%,-65%);
+    text-transform: uppercase;
+    color:#fff;
+    text-align: center;
+    
+}
+
+.card-text p{
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+    -webkit-transform: translateY(220%);
+            transform: translateY(220%);
+    word-spacing: 4px;
+    opacity:0;
+    -webkit-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out;
+}
+
+.card-text h3{
+    font-size: 23px;
+    font-weight: 200;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  
+  
+}
+
+.card-text h3 strong{
+    font-weight: 700;
+}
+
+.card:hover .card-img{
+    opacity:0.6;
+}
+
+.card:hover .card-text h3{
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
+}
+
+.card:hover .card-text p{
+    opacity:1;
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+}
+
+.card2{
+    cursor: pointer;
+    width: 500px;
+    height:auto;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    
+}
+
+.card2::before, .card2::after{
+    content: '';
+    position: absolute;   
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    
+    
+}
+
+.card2::before {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.card2:hover::before, .card2:hover::after{
+    opacity: 1;
+}
+
+.card-img2{
+    max-width: 100%;
+    display: block;
+    -webkit-transition: opacity 0.2s ease-out;
+    transition: opacity 0.2s ease-out;
+
+   
+}
+
+.card-text2 {
+    position: absolute;
+    width: 450px;
+    min-height: 130px;
+    top:30%;
+    left:50%;
+    -webkit-transform: translate(-50%,-65%);
+            transform: translate(-50%,-65%);
+    text-transform: uppercase;
+    color:#fff;
+    text-align: center;
+    border:6px solid #fff;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    padding: 2rem 2rem 0 2rem;
+    text-align: justify;
+    
+    
+}
+
+.card-text2 p{
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+    /* transform: translateY(220%); */
+    word-spacing: 4px;
+    opacity:0;
+    -webkit-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out;
+}
+
+.card-head2{
+    position: absolute;
+    top:20%;
+    left:50%;
+    -webkit-transform: translate(-50%,-65%);
+            transform: translate(-50%,-65%);
+    text-transform: uppercase;
+    color:#fff;
+    
+}
+
+.card-head2 h3{
+  
+    margin-left: -200px;
+    font-size: 23px;
+    font-weight: 200;
+    /* transition: transform 0.3s ease-out; */
+  
+  
+}
+
+.card-head2 h3 strong{
+    font-weight: 700;
+}
+
+.card2:hover .card-img2{
+    opacity:0.6;
+}
+
+/* .card2:hover .card-text2 h3{
+    transform: translateY(70%);
+} */
+
+.card2:hover .card-text2 p{
+    opacity:1;
+   
+}
+
+.card2:hover .card-text2 {
+   -webkit-transform: translate(-50%,50%);
+           transform: translate(-50%,50%);
+}
+
+.card3{
+    cursor: pointer;
+    width: 500px;
+    height:auto;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.card3::before, .card3::after{
+    content: '';
+    position: absolute;   
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    
+    
+}
+
+.card3::before {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.card3:hover::before, .card3:hover::after{
+    opacity: 1;
+}
+
+.card-img3{
+    max-width: 100%;
+    display: block;
+    -webkit-transition: opacity 0.2s ease-out;
+    transition: opacity 0.2s ease-out;
+
+   
+}
+
+.card-text3 {
+    position: absolute;
+    width: 450px;
+    min-height: 130px;
+    top:32%;
+    left:55%;
+    -webkit-transform: translate(-60%,-65%);
+            transform: translate(-60%,-65%);
+    text-transform: uppercase;
+    color:#fff; 
+    -webkit-transition: all 0.5s ease-out; 
+    transition: all 0.5s ease-out;
+    padding: 2rem 2rem 0 2rem;
+    text-align: justify;
+  
+    
+    
+}
+
+.card-text3 p{
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+    /* transform: translateY(220%); */
+    position: relative;
+    left:600px;
+    word-spacing: 4px;
+    -webkit-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out;
+    /* transform: scale(0);
+    transform-origin: 100% 50%; */
+    opacity: 0;
+}
+
+.card-text3 h3{
+  
+    margin: 0;
+    font-size: 23px;
+    font-weight: 200;
+     
+}
+
+.card-text3 h3::after{
+    content:'';
+    display: block;
+    border-bottom: 4px solid #fff;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+.card3:hover .card-text3 h3::after{
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+}
+
+.card-text3 h3 strong{
+    font-weight: 700;
+}
+
+.card3:hover .card-img3{
+    opacity:0.6;
+}
+
+/* .card3:hover .card-text3 h3{
+    transform: translateY(70%);
+} */
+
+.card3:hover .card-text3 p{
+    opacity:1;
+    /* transform: scale(1); */
+    left:0;
+   
+}
+
+.card4{
+    cursor: pointer;
+    width: 500px;
+    height:auto;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.card4::after{
+    content: '';
+    position: absolute;   
+    top:1.3rem;
+    left:1.3rem;
+    right: 1.3rem;
+    bottom: 1.3rem;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    border:1px solid #fff;
+    
+}
+
+.card4::before{
+    content: '';
+    position: absolute;   
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.card4::before {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.card4:hover::before, .card4:hover::after{
+    opacity: 1;
+}
+
+.card4:hover::after{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+
+.card-img4{
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    max-width: 100%;
+    display: block;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+   
+}
+
+.card-text4 {
+    position: absolute;
+    width: 450px;
+    min-height: 130px;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-60%);
+            transform: translate(-50%,-60%);
+    text-transform: uppercase;
+    color:#fff;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    padding: 2rem 2rem 0 2rem;
+    text-align: center;
+    
+    
+}
+
+.card-text4 p{
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    word-spacing: 4px;
+    opacity:0;
+    -webkit-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out;
+}
+
+.card-text4 h3{
+  
+    
+    font-size: 23px;
+    font-weight: 200;
+    /* transition: transform 0.3s ease-out; */
+  
+  
+}
+
+.card-text4 h3 strong{
+    font-weight: 700;
+}
+
+.card4:hover .card-img4{
+    opacity:0.6;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+
+.card4:hover .card-text4 p{
+    opacity:1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+   
+}
+
+.card4:hover .card-text4 {
+
+}
+
+.card5{
+    cursor: pointer;
+    width: 500px;
+    height:auto;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.card5::before, .card5::after{
+    content: '';
+    position: absolute;   
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.card5::before {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.card5:hover::before, .card5:hover::after{
+    opacity: 1;
+}
+
+.card5:hover::after{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+
+.card-img5{
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    max-width: 100%;
+    display: block;
+    -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+   
+}
+
+.card-text5 {
+    position: absolute;
+    max-width: 180px;
+    top:-10px;
+    right:30px;
+    text-transform: uppercase;
+    color:#fff;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    padding: 2rem 0.5rem;
+    text-align: justify;
+    
+    
+    
+}
+
+.card-text5 p{
+    border-left: 1px solid #fff;
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    word-spacing: 2px;
+    opacity:0;
+    -webkit-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out;
+}
+
+.card-head5 {
+    position: absolute;
+    width: 450px;
+    min-height: 130px;
+    top:50%;
+    left:50%;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    padding: 2rem 2rem 0 2rem;
+    text-align: center;
+    -webkit-transform: translate(-75%,30%);
+            transform: translate(-75%,30%);
+    text-transform: uppercase;
+    color:#fff;
+
+}
+
+.card-head5 h3{
+   
+  
+ 
+    font-size: 30px;
+    font-weight: 100;
+    /* transition: transform 0.3s ease-out; */
+  
+  
+}
+
+.card-head5 h3 strong{
+    font-weight: 700;
+}
+
+.card5:hover .card-img5{
+    opacity:0.6;
+    -webkit-transform:  scale(1);
+            transform:  scale(1);
+   
+
+}
+
+.card5:hover .card-text5 p{
+    opacity:1;
+   
+  
+   
+}
+
+.card5:hover .card-text5 {
+
+}
+
+.card6{
+    cursor: pointer;
+    width: 500px;
+    height:auto;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.card6::before, .card6::after{
+    content: '';
+    position: absolute;   
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.card6::before {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.card6:hover::before, .card6:hover::after{
+    opacity: 1;
+}
+
+.card6:hover::after{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+
+.card-img6{
+    
+    max-width: 100%;
+    display: block;
+    -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+   
+}
+
+.card-text6 {
+    position: absolute;
+    max-width: 180px;
+    bottom:-15px;
+    right:30px;
+    text-transform: uppercase;
+    color:#fff;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    padding: 2rem 0.5rem;
+    text-align: justify;
+    z-index: 2;
+    
+    
+    
+}
+
+.card-text6::before{
+    content: '';
+    display: block;
+  
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    opacity: 0;
+    -webkit-transform: scaleX(6.3) scaleY(1.65) translateY(41%) ;
+            transform: scaleX(6.3) scaleY(1.65) translateY(41%) ;
+    background: rgba(255,255,255,0.4);
+    z-index: -1;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.card6:hover .card-text6::before{
+    -webkit-transform: scaleX(6.3) scaleY(1.65) translateY(41%) rotate(-40deg);
+            transform: scaleX(6.3) scaleY(1.65) translateY(41%) rotate(-40deg);
+    opacity: 1;
+}
+
+.card6:hover .icon{
+    color: rgb(78, 48, 87);
+}
+
+.card6:hover .card-text6:hover i:hover {
+    color:#fff;
+}
+
+.card-text6 p{
+   
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    word-spacing: 2px;
+    opacity:0;
+    -webkit-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out;
+}
+
+.card-head6 {
+    position: absolute;
+    width: 450px;
+    min-height: 130px;
+    top:0;
+    left:0;
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    padding: 2rem 2rem 0 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color:#fff;
+
+}
+
+.card-head6 h3{
+   
+  
+ 
+    font-size: 30px;
+    font-weight: 100;
+    /* transition: transform 0.3s ease-out; */
+  
+  
+}
+
+.card-head6 h3 strong{
+    font-weight: 700;
+}
+
+.card6:hover .card-img6{
+    opacity:0.6;
+    
+   
+
+}
+
+.card-text6 span{
+    padding: 0.2rem;
+}
+
+.card6:hover .card-text6 p{
+    opacity:1;
+   
+  
+   
+}
+
+.card6:hover .card-text6 {
+
+}
+
+.card7{
+    cursor: pointer;
+    width: 500px;
+    height:auto;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.card7::before, .card7::after{
+    content: '';
+    position: absolute;   
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+
+    -webkit-transition: all 0.5s ease-out;
+
+    transition: all 0.5s ease-out;
+}
+
+.card7::before {
+    background-color: rgba(231, 52, 52, 0.8);
+}
+
+.card7:hover::before, .card7:hover::after{
+    opacity: 1;
+}
+
+.card-img7{
+    
+    max-width: 100%;
+    display: block;
+    -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+   
+}
+
+.p1 , .p2 , .p3{
+    display: block;
+    background-color:#fff;
+    margin-bottom: 0.3rem;
+    position: absolute;
+   margin-top: 0;
+   
+    left:-600px;
+    color:#333;
+    font-size: 1rem;
+    font-weight: 400;
+   padding-left: 1.1rem;
+   
+  
+   text-align: left;
+    opacity:1;
+    -webkit-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out;
+    z-index: 2;
+}
+
+.p1{
+    bottom: 200px;
+    width: 48%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.p2{
+    bottom: 162px;
+    width: 70%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.p3{
+    bottom: 124px;
+    width: 63%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.card-head7 {
+    position: absolute;
+    width: 450px;
+   
+    top:-10px;
+    left:10px;
+    -webkit-transform: translateX(-15%);
+            transform: translateX(-15%);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    padding: 1rem 1rem 0 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color:#fff;
+    margin-bottom: 0;
+
+}
+
+.card-head7 h3{
+   
+  
+    margin: 0;
+    margin-top: 1rem;
+    font-size: 30px;
+    font-weight: 100;
+    /* transition: transform 0.3s ease-out; */
+  
+  
+}
+
+.card-head7 h3 strong{
+    font-weight: 700;
+}
+
+.card7:hover .card-img7{
+    opacity:0.6;
+    
+   
+
+}
+
+.card7:hover  .p1 , .card7:hover  .p2, .card7:hover  .p3{
+
+    opacity:1;
+   
+    left: 50px;
+  
+   
+}
+
+
+
